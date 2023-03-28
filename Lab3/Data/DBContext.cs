@@ -9,10 +9,7 @@ namespace Lab3.Data
              : base(options)
         {
         }
-        public DBContext()
-        {
 
-        }
 
         public DbSet<Model.Route> Routes { get; set; } = default!;
         public DbSet<Stop> Stops { get; set; } = default!;
