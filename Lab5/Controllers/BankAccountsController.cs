@@ -8,9 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using Lab5.Data;
 using Lab5.Models;
 using Lab5.Areas.Identity.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Lab5.Controllers
 {
+    [Authorize]
     public class BankAccountsController : Controller
     {
         private readonly Lab5Context _context;

@@ -21,5 +21,5 @@ public class Lab5Context : IdentityDbContext<Lab5User>
         // Add your customizations after calling base.OnModelCreating(builder);
     }
 
-    public DbSet<Lab5.Models.BankAccount>? BankAccount { get; set; }
+    public DbSet<Lab5.Models.BankAccount>? BankAccount { get; set; } = default!;
 }
